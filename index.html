@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS</title>
+
+  <!-- ====== SEO / Compartir en redes (vital para un drop) ====== -->
+  <meta name="description" content="DROP 001 · KEYBOARD RUGS. Piezas artesanales premium para quienes entienden que su espacio los representa. No es decoración, es declaración. Producción limitada por agenda." />
+  <meta name="theme-color" content="#0A0A0B" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS" />
+  <meta property="og:description" content="No es decoración, es declaración. Piezas artesanales premium. Producción limitada por agenda." />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta property="og:site_name" content="HOUSE OF KAIZEN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS" />
+  <meta name="twitter:description" content="No es decoración, es declaración. Piezas artesanales premium. Producción limitada." />
+  <meta name="twitter:image" content="assets/img/og-cover.jpg" />
+
+  <!-- Favicon monograma HK (SVG inline, sin archivos extra) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230A0A0B'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='800' fill='%23F4F1EA' text-anchor='middle'>HK</text></svg>" />
+
+  <!-- Tipografía: Syne (display) · Inter (texto) · Space Mono (etiquetas/specs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Texturas y capas globales -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="House of Kaizen — inicio">
+      <span class="nav__mark">HK</span>
+      <span class="nav__name">HOUSE&nbsp;OF&nbsp;KAIZEN</span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#manifiesto">Manifiesto</a>
+      <a href="#drop">Drop 001</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#exclusividad">Exclusividad</a>
+    </nav>
+    <a href="#reservar" class="btn btn--solid nav__cta" data-reserve>Reservar pieza</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== SECCIÓN 1 · HERO ===================== -->
+    <section class="hero" id="hero">
+      <!-- Fondo cinematográfico. Sustituye por tu video/imagen real (ver assets/img/README.md) -->
+      <div class="hero__media" aria-hidden="true">
+        <!-- Si agregas video, descomenta y borra el .stage de abajo:
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+          <source src="assets/img/hero.mp4" type="video/mp4" />
+        </video> -->
+        <div class="stage" data-tilt>
+          <div class="stage__glow"></div>
+          <div class="rug">
+            <div class="rug__stitch"></div>
+            <div class="rug__keys"></div>
+            <span class="rug__tag">KEYBOARD RUG · 900×400</span>
+          </div>
+        </div>
+        <div class="hero__spot" id="heroSpot"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="dot"></span> HOUSE OF KAIZEN — EST. MMXXVI
+        </p>
+        <h1 class="hero__title">
+          <span class="reveal" data-reveal data-delay="1">NO ES</span>
+          <span class="reveal" data-reveal data-delay="2">DECORACIÓN.</span>
+          <span class="reveal hero__title--accent" data-reveal data-delay="3">ES DECLARACIÓN.</span>
+        </h1>
+        <p class="hero__sub reveal" data-reveal data-delay="4">
+          Piezas artesanales premium para quienes entienden que su espacio
+          no es un fondo: es una extensión de quiénes son.
+        </p>
+        <div class="hero__actions reveal" data-reveal data-delay="5">
+          <a href="#reservar" class="btn btn--solid" data-reserve>Reservar mi pieza</a>
+          <a href="#drop" class="btn btn--ghost">Ver el Drop 001</a>
+        </div>
+      </div>
+
+      <div class="hero__badge reveal" data-reveal data-delay="5">
+        <span class="hero__badge-k">DROP 001</span>
+        <span class="hero__badge-v">KEYBOARD RUGS</span>
+      </div>
+
+      <a href="#manifiesto" class="hero__scroll" aria-label="Bajar">
+        <span>SCROLL</span><i></i>
+      </a>
+    </section>
+
+    <!-- Marquee separador -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>NO ES DECORACIÓN — ES DECLARACIÓN&nbsp;✦&nbsp;</span>
+        <span>HECHO A MANO, PUNTO POR PUNTO&nbsp;✦&nbsp;</span>
+        <span>PRODUCCIÓN LIMITADA — POR AGENDA&nbsp;✦&nbsp;</span>
+        <span>DROP 001 · KEYBOARD RUGS&nbsp;✦&nbsp;</span>
+        <span>NO ES DECORACIÓN — ES DECLARACIÓN&nbsp;✦&nbsp;</span>
+        <span>HECHO A MANO, PUNTO POR PUNTO&nbsp;✦&nbsp;</span>
+        <span>PRODUCCIÓN LIMITADA — POR AGENDA&nbsp;✦&nbsp;</span>
+        <span>DROP 001 · KEYBOARD RUGS&nbsp;✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ================= SECCIÓN 2 · MANIFIESTO ================= -->
+    <section class="manifesto" id="manifiesto">
+      <p class="section-label reveal" data-reveal>01 — MANIFIESTO</p>
+      <h2 class="manifesto__title reveal" data-reveal data-delay="1">
+        Tu espacio no es un fondo.<br />
+        Es una <em>declaración</em> de identidad.
+      </h2>
+      <div class="manifesto__grid">
+        <p class="manifesto__lead reveal" data-reveal data-delay="2">
+          <strong>Kaizen</strong> — 改善 — significa mejora constante. La obsesión
+          por el detalle. La idea de que nada terminado es definitivo y todo
+          puede afinarse un grado más.
+        </p>
+        <p class="reveal" data-reveal data-delay="3">
+          No fabricamos objetos para llenar un escritorio. Creamos piezas que
+          cargan intención. Donde trabajas, juegas o creas debería sentirse
+          tuyo — no comprado, no genérico, no de catálogo.
+        </p>
+        <p class="reveal" data-reveal data-delay="4">
+          Cada pieza de HOUSE OF KAIZEN es identidad convertida en objeto
+          físico. Cultura, craft y carácter en una sola superficie. Eso es lo
+          que separa una declaración de una decoración.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================== SECCIÓN 3 · DROP 001 ================== -->
+    <section class="drop" id="drop">
+      <div class="drop__head">
+        <p class="section-label reveal" data-reveal>02 — EL LANZAMIENTO</p>
+        <h2 class="drop__title reveal" data-reveal data-delay="1">
+          DROP <span>001</span>
+        </h2>
+        <p class="drop__name reveal" data-reveal data-delay="2">KEYBOARD RUGS</p>
+      </div>
+
+      <div class="drop__body">
+        <figure class="drop__media reveal" data-reveal>
+          <!-- Sustituye por foto real del producto -->
+          <div class="placeholder placeholder--tall">
+            <span>FOTO PRODUCTO · 4:5</span>
+          </div>
+          <figcaption>Pieza fotografiada en setup real · DROP 001</figcaption>
+        </figure>
+
+        <div class="drop__info">
+          <p class="reveal" data-reveal data-delay="1">
+            No es un accesorio. Es la base sobre la que se construye un setup
+            con identidad. Una superficie premium, diseñada para personas que
+            cuidan obsesivamente su espacio.
+          </p>
+          <ul class="specs">
+            <li class="reveal" data-reveal data-delay="2"><span>Categoría</span><b>Keyboard Rug premium</b></li>
+            <li class="reveal" data-reveal data-delay="2"><span>Diseño</span><b>100% personalizado</b></li>
+            <li class="reveal" data-reveal data-delay="3"><span>Técnica</span><b>Tufting a mano</b></li>
+            <li class="reveal" data-reveal data-delay="3"><span>Fibra</span><b>Premium de alta densidad</b></li>
+            <li class="reveal" data-reveal data-delay="4"><span>Edición</span><b>Limitada · por agenda</b></li>
+          </ul>
+          <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="4" data-reserve>Reservar esta pieza</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECCIÓN 4 · PROCESO ================= -->
+    <section class="process" id="proceso">
+      <p class="section-label reveal" data-reveal>03 — CRAFTSMANSHIP</p>
+      <h2 class="process__title reveal" data-reveal data-delay="1">
+        Hecho a mano.<br />Punto por punto.
+      </h2>
+
+      <div class="process__steps">
+        <article class="step reveal" data-reveal data-delay="1">
+          <div class="placeholder placeholder--sq"><span>FOTO · DISEÑO</span></div>
+          <span class="step__n">01</span>
+          <h3>Diseño</h3>
+          <p>Traducimos tu identidad a una composición. Color, forma y carácter antes de tocar la fibra.</p>
+        </article>
+        <article class="step reveal" data-reveal data-delay="2">
+          <div class="placeholder placeholder--sq"><span>FOTO · TUFTING</span></div>
+          <span class="step__n">02</span>
+          <h3>Tufting</h3>
+          <p>Cada hilo se inserta a mano con máquina de tufting. Horas de trabajo por pieza, sin atajos.</p>
+        </article>
+        <article class="step reveal" data-reveal data-delay="3">
+          <div class="placeholder placeholder--sq"><span>FOTO · MATERIAL</span></div>
+          <span class="step__n">03</span>
+          <h3>Materiales</h3>
+          <p>Fibra premium de alta densidad y acabado sellado. Tacto, peso y durabilidad de objeto serio.</p>
+        </article>
+        <article class="step reveal" data-reveal data-delay="4">
+          <div class="placeholder placeholder--sq"><span>FOTO · ACABADO</span></div>
+          <span class="step__n">04</span>
+          <h3>Acabado</h3>
+          <p>Recorte, sellado y control de detalle. Sale del taller solo cuando merece tu espacio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =============== SECCIÓN 5 · EXCLUSIVIDAD =============== -->
+    <section class="scarcity" id="exclusividad">
+      <div class="scarcity__inner">
+        <p class="section-label reveal" data-reveal>04 — EXCLUSIVIDAD</p>
+        <h2 class="scarcity__title reveal" data-reveal data-delay="1">
+          No hacemos producción masiva.<br />
+          Hacemos <em>piezas únicas</em>.
+        </h2>
+        <p class="scarcity__lead reveal" data-reveal data-delay="2">
+          Cada rug se fabrica a mano y por encargo. Abrimos un número limitado
+          de cupos por agenda para proteger el detalle de cada pieza. Cuando se
+          llenan, el drop cierra.
+        </p>
+
+        <div class="counter reveal" data-reveal data-delay="3">
+          <div class="counter__item">
+            <b data-count="20">20</b><span>Cupos en el Drop 001</span>
+          </div>
+          <div class="counter__bar">
+            <i id="slotsBar"></i>
+            <small><span id="slotsTaken">13</span> reservados · <span id="slotsLeft">7</span> disponibles</small>
+          </div>
+          <div class="counter__item">
+            <b>1:1</b><span>Diseño por cliente</span>
+          </div>
+        </div>
+
+        <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="4" data-reserve>Asegurar mi cupo</a>
+      </div>
+    </section>
+
+    <!-- ================= SECCIÓN 6 · RESERVAR (CTA) ================= -->
+    <section class="cta" id="reservar">
+      <div class="cta__intro">
+        <p class="section-label reveal" data-reveal>05 — RESERVA</p>
+        <h2 class="cta__title reveal" data-reveal data-delay="1">
+          Esto no se compra<br />en un carrito.
+        </h2>
+        <p class="cta__lead reveal" data-reveal data-delay="2">
+          Se reserva en una conversación. Cuéntanos tu setup y la idea que
+          quieres convertir en pieza. Respondemos personalmente a cada solicitud.
+        </p>
+        <a id="waBtn" class="btn btn--wa reveal" data-reveal data-delay="3" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M.06 24l1.68-6.14A11.86 11.86 0 0 1 .16 11.9C.16 5.33 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.79 11.79 0 0 1 3.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zM6.6 20.13l.36.22a9.86 9.86 0 0 0 5.02 1.38h.01c5.45 0 9.89-4.43 9.89-9.88a9.82 9.82 0 0 0-2.89-6.99 9.82 9.82 0 0 0-6.99-2.9c-5.46 0-9.9 4.43-9.9 9.89 0 1.87.53 3.7 1.52 5.28l.24.38-1 3.64 3.74-.74zm11.39-5.55c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41z"/></svg>
+          Reservar por WhatsApp
+        </a>
+      </div>
+
+      <form class="form" id="reserveForm" name="reserva" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <!-- Netlify Forms: estos campos ocultos habilitan captura de leads al desplegar en Netlify -->
+        <input type="hidden" name="form-name" value="reserva" />
+        <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
+
+        <div class="form__row">
+          <label>Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>WhatsApp / Contacto
+            <input type="text" name="contacto" placeholder="+57 ___ ___ ____" required />
+          </label>
+        </div>
+        <div class="form__row">
+          <label>Tamaño
+            <select name="tamano">
+              <option>Deskmat (900×400)</option>
+              <option>XL (1200×600)</option>
+              <option>Custom (dime medidas)</option>
+            </select>
+          </label>
+          <label>Ciudad / País
+            <input type="text" name="ubicacion" placeholder="Ciudad, País" />
+          </label>
+        </div>
+        <label>Tu idea / identidad
+          <textarea name="idea" rows="4" placeholder="Colores, referencias, el setup que tienes y la pieza que imaginas..."></textarea>
+        </label>
+        <button type="submit" class="btn btn--solid form__submit">Enviar solicitud de reserva</button>
+        <p class="form__note">Sin pago aún. Confirmamos disponibilidad, diseño y precio contigo antes de avanzar.</p>
+      </form>
+    </section>
+
+    <!-- ============== TEASER · DROP 002 (CAR RUGS) ============== -->
+    <section class="teaser" id="drop002">
+      <p class="section-label reveal" data-reveal>PRÓXIMAMENTE</p>
+      <h2 class="teaser__title reveal" data-reveal data-delay="1">
+        DROP <span>002</span>
+      </h2>
+      <p class="teaser__redacted reveal" data-reveal data-delay="2">
+        <span class="redacted">CAR RUGS</span>
+      </p>
+      <p class="teaser__copy reveal" data-reveal data-delay="3">
+        Estamos construyendo algo para tu otro espacio. El que conduces.
+        Detalles bajo llave. La lista se abre primero para quienes ya están dentro.
+      </p>
+      <form class="waitlist reveal" data-reveal data-delay="4" id="waitlistForm" name="waitlist" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="waitlist" />
+        <input type="email" name="email" placeholder="tu@email.com" required aria-label="Email" />
+        <button type="submit" class="btn btn--ghost">Unirme a la lista</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer">
+    <div class="footer__big">HOUSE OF KAIZEN</div>
+    <div class="footer__cols">
+      <div>
+        <p class="footer__label">Marca</p>
+        <p>No es decoración,<br />es declaración.</p>
+      </div>
+      <div>
+        <p class="footer__label">Drop actual</p>
+        <p>001 · Keyboard Rugs<br />Edición limitada</p>
+      </div>
+      <div>
+        <p class="footer__label">Contacto</p>
+        <a id="waFooter" href="#" target="_blank" rel="noopener">WhatsApp</a><br />
+        <a id="igFooter" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> House of Kaizen</span>
+      <a href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
