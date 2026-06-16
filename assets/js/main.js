@@ -41,20 +41,32 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- Precio base (un solo lugar → toda la página) ---------- */
   $$("[data-price]").forEach((el) => (el.textContent = CONFIG.priceBase));
 
-  /* ---------- Contador de cupos ---------- */
+  /* ---------- Cupos: rellena TODOS los marcadores del sitio ---------- */
   const left = Math.max(CONFIG.slotsTotal - CONFIG.slotsTaken, 0);
-  const taken = $("#slotsTaken"); if (taken) taken.textContent = CONFIG.slotsTaken;
-  const leftEl = $("#slotsLeft"); if (leftEl) leftEl.textContent = left;
-  const total = $('[data-count]'); if (total) total.textContent = CONFIG.slotsTotal;
+  $$("#slotsTaken").forEach((el) => (el.textContent = CONFIG.slotsTaken));
+  $$("#slotsLeft, #slotsLeftHero, #slotsLeftCta, #slotsLeftSticky").forEach(
+    (el) => (el.textContent = left)
+  );
+  $$("[data-slots-total]").forEach((el) => (el.textContent = CONFIG.slotsTotal));
 
-  /* ---------- Barra de progreso de scroll ---------- */
+  /* ---------- Barra de progreso de scroll + sticky CTA ---------- */
   const bar = $("#progressBar");
+  const sticky = $("#stickyCta");
+  const reserveEl = $("#reservar");
+  const heroSec = $("#hero");
   const onScroll = () => {
     const h = document.documentElement;
     const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
     if (bar) bar.style.width = pct + "%";
     // Nav sólido tras pasar el hero
     nav.classList.toggle("is-stuck", h.scrollTop > 40);
+    // Sticky CTA móvil: aparece al pasar el hero, se oculta sobre el formulario
+    if (sticky) {
+      const past = h.scrollTop > (heroSec ? heroSec.offsetHeight * 0.7 : 600);
+      const reserveTop = reserveEl ? reserveEl.getBoundingClientRect().top : Infinity;
+      const reserveVisible = reserveTop < window.innerHeight * 0.9;
+      sticky.classList.toggle("is-visible", past && !reserveVisible);
+    }
   };
   const nav = $("#nav");
   window.addEventListener("scroll", onScroll, { passive: true });
