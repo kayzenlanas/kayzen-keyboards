@@ -7,10 +7,15 @@ const CONFIG = {
   // Ejemplo Colombia: 57 + 3001234567  ->  "573001234567"
   whatsappNumber: "573114305953",        // House of Kaizen (Colombia +57)
 
-  // Mensaje que se autocompleta al abrir WhatsApp desde el botón directo.
-  whatsappMessage: "Hola HOUSE OF KAIZEN 👋 Quiero reservar mi KEYBOARD RUG del DROP 001.",
+  // Mensaje para SEPARAR AGENDA (botón directo y formulario).
+  whatsappMessage: "Hola HOUSE OF KAIZEN 👋 Quiero separar mi agenda para una KEYBOARD RUG del DROP 001.",
+  // Mensaje para CANCELAR / gestionar un pedido existente.
+  cancelMessage: "Hola HOUSE OF KAIZEN, necesito gestionar / cancelar mi pedido del DROP 001.",
 
   instagram: "https://instagram.com/houseofkaizen",  // @houseofkaizen
+
+  // Precio base mostrado en toda la página (cámbialo en un solo lugar).
+  priceBase: "$120.000 COP",
 
   // Cupos del drop (controla el contador de escasez de la sección Exclusividad)
   slotsTotal: 20,
@@ -30,7 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- Enlaces de WhatsApp / Instagram ---------- */
   const waBtn = $("#waBtn");      if (waBtn) waBtn.href = waLink();
   const waFoot = $("#waFooter");  if (waFoot) waFoot.href = waLink();
+  const waCancel = $("#waCancel"); if (waCancel) waCancel.href = waLink(CONFIG.cancelMessage);
   const ig = $("#igFooter");      if (ig) ig.href = CONFIG.instagram;
+
+  /* ---------- Precio base (un solo lugar → toda la página) ---------- */
+  $$("[data-price]").forEach((el) => (el.textContent = CONFIG.priceBase));
 
   /* ---------- Contador de cupos ---------- */
   const left = Math.max(CONFIG.slotsTotal - CONFIG.slotsTaken, 0);
@@ -100,6 +109,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   }
 
+  /* ---------- FAQ: un solo panel abierto a la vez ---------- */
+  const faqItems = $$(".faq__item");
+  faqItems.forEach((item) =>
+    item.addEventListener("toggle", () => {
+      if (item.open) faqItems.forEach((o) => { if (o !== item) o.open = false; });
+    })
+  );
+
   /* ---------- Formulario de reserva → abre WhatsApp con los datos ---------- */
   /* Funciona sin backend. Si despliegas en Netlify, los campos también
      quedan guardados como lead (data-netlify="true").                      */
@@ -109,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const d = new FormData(form);
       const msg =
-`✦ NUEVA RESERVA · DROP 001 — KEYBOARD RUGS
+`✦ SEPARAR AGENDA · DROP 001 — KEYBOARD RUGS
 Nombre: ${d.get("nombre") || "-"}
 Contacto: ${d.get("contacto") || "-"}
 Tamaño: ${d.get("tamano") || "-"}

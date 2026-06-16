@@ -32,6 +32,7 @@
 
 <body>
   <!-- Texturas y capas globales -->
+  <div class="acidwash" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
@@ -46,8 +47,9 @@
       <a href="#drop">Drop 001</a>
       <a href="#proceso">Proceso</a>
       <a href="#exclusividad">Exclusividad</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a href="#reservar" class="btn btn--solid nav__cta" data-reserve>Reservar pieza</a>
+    <a href="#reservar" class="btn btn--solid nav__cta" data-reserve>Separar agenda</a>
   </header>
 
   <main id="top">
@@ -85,8 +87,9 @@
           no es un fondo: es una extensión de quiénes son.
         </p>
         <div class="hero__actions reveal" data-reveal data-delay="5">
-          <a href="#reservar" class="btn btn--solid" data-reserve>Reservar mi pieza</a>
+          <a href="#reservar" class="btn btn--solid" data-reserve>Separar mi pieza</a>
           <a href="#drop" class="btn btn--ghost">Ver el Drop 001</a>
+          <span class="hero__price">Desde <b data-price>$120.000 COP</b></span>
         </div>
       </div>
 
@@ -171,8 +174,9 @@
             <li class="reveal" data-reveal data-delay="3"><span>Técnica</span><b>Tufting a mano</b></li>
             <li class="reveal" data-reveal data-delay="3"><span>Fibra</span><b>Premium de alta densidad</b></li>
             <li class="reveal" data-reveal data-delay="4"><span>Edición</span><b>Limitada · por agenda</b></li>
+            <li class="reveal specs--price" data-reveal data-delay="4"><span>Precio base</span><b data-price>$120.000 COP</b></li>
           </ul>
-          <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="4" data-reserve>Reservar esta pieza</a>
+          <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="5" data-reserve>Separar esta pieza</a>
         </div>
       </div>
     </section>
@@ -243,21 +247,62 @@
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 6 · RESERVAR (CTA) ================= -->
+    <!-- ================= SECCIÓN 6 · FAQ (acordeón) ================= -->
+    <section class="faq" id="faq">
+      <div class="faq__head">
+        <div>
+          <p class="section-label reveal" data-reveal>05 — PREGUNTAS</p>
+          <h2 class="faq__title reveal" data-reveal data-delay="1">FAQ</h2>
+        </div>
+        <p class="faq__intro reveal" data-reveal data-delay="2">Todo lo que necesitas antes de separar tu agenda. ¿Otra duda? Escríbenos directo por WhatsApp.</p>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item" open>
+          <summary>¿Cómo separo mi pieza?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">Escríbenos por WhatsApp y <b>agendamos tu cupo</b> dentro del Drop 001. Definimos diseño, tamaño y fecha. No hay pago inmediato: primero confirmamos disponibilidad y el valor exacto de tu pieza.</div>
+        </details>
+        <details class="faq__item">
+          <summary>¿Cuál es el precio?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">El precio base es <b data-price>$120.000 COP</b>. Varía según tamaño, complejidad del diseño y nivel de personalización. Te pasamos el valor final al definir tu pieza, sin sorpresas.</div>
+        </details>
+        <details class="faq__item">
+          <summary>¿Puedo cancelar mi pedido?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">Sí. Puedes <b>cancelar por WhatsApp</b> antes de que tu pieza entre a producción. Una vez iniciado el tufting —al ser hecha a mano y personalizada— la cancelación aplica condiciones que te explicamos al agendar.</div>
+        </details>
+        <details class="faq__item">
+          <summary>¿Cuánto tarda en estar lista?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">Cada pieza es hecha a mano, punto por punto. El tiempo depende de la agenda activa; te damos una fecha estimada en el momento de separar tu cupo.</div>
+        </details>
+        <details class="faq__item">
+          <summary>¿Hacen envíos?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">Sí, coordinamos envío a todo el país. El costo se calcula según tu ubicación y se confirma antes de despachar.</div>
+        </details>
+        <details class="faq__item">
+          <summary>¿Es 100% personalizado?<span class="ic" aria-hidden="true"></span></summary>
+          <div class="faq__answer">Totalmente. Trabajamos tu diseño <b>1:1</b> — colores, referencias y dimensiones. Tu pieza no se repite: es identidad, no catálogo.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= SECCIÓN 7 · SEPARAR AGENDA (CTA) ================= -->
     <section class="cta" id="reservar">
       <div class="cta__intro">
-        <p class="section-label reveal" data-reveal>05 — RESERVA</p>
+        <p class="section-label reveal" data-reveal>06 — SEPARAR AGENDA</p>
         <h2 class="cta__title reveal" data-reveal data-delay="1">
           Esto no se compra<br />en un carrito.
         </h2>
         <p class="cta__lead reveal" data-reveal data-delay="2">
-          Se reserva en una conversación. Cuéntanos tu setup y la idea que
-          quieres convertir en pieza. Respondemos personalmente a cada solicitud.
+          Se separa en una conversación. Cuéntanos tu setup y la idea que
+          quieres convertir en pieza. Respondemos personalmente cada solicitud.
         </p>
-        <a id="waBtn" class="btn btn--wa reveal" data-reveal data-delay="3" href="#" target="_blank" rel="noopener">
+        <span class="cta__price reveal" data-reveal data-delay="2">Precio base · Desde <b data-price>$120.000 COP</b></span>
+        <div class="cta__actions reveal" data-reveal data-delay="3">
+          <a id="waBtn" class="btn btn--wa" href="#" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M.06 24l1.68-6.14A11.86 11.86 0 0 1 .16 11.9C.16 5.33 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.79 11.79 0 0 1 3.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zM6.6 20.13l.36.22a9.86 9.86 0 0 0 5.02 1.38h.01c5.45 0 9.89-4.43 9.89-9.88a9.82 9.82 0 0 0-2.89-6.99 9.82 9.82 0 0 0-6.99-2.9c-5.46 0-9.9 4.43-9.9 9.89 0 1.87.53 3.7 1.52 5.28l.24.38-1 3.64 3.74-.74zm11.39-5.55c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41z"/></svg>
-          Reservar por WhatsApp
-        </a>
+          Separar agenda por WhatsApp
+          </a>
+          <p class="cta__cancel">¿Ya tienes pedido? <a id="waCancel" href="#" target="_blank" rel="noopener">Cancelar por WhatsApp</a></p>
+        </div>
       </div>
 
       <form class="form" id="reserveForm" name="reserva" method="POST" netlify-honeypot="bot-field" data-netlify="true">
@@ -288,7 +333,7 @@
         <label>Tu idea / identidad
           <textarea name="idea" rows="4" placeholder="Colores, referencias, el setup que tienes y la pieza que imaginas..."></textarea>
         </label>
-        <button type="submit" class="btn btn--solid form__submit">Enviar solicitud de reserva</button>
+        <button type="submit" class="btn btn--solid form__submit">Enviar y separar agenda</button>
         <p class="form__note">Sin pago aún. Confirmamos disponibilidad, diseño y precio contigo antes de avanzar.</p>
       </form>
     </section>
