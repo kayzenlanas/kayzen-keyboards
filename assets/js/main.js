@@ -5,12 +5,12 @@
 const CONFIG = {
   // Número de WhatsApp en formato internacional SIN "+", espacios ni guiones.
   // Ejemplo Colombia: 57 + 3001234567  ->  "573001234567"
-  whatsappNumber: "573000000000",        // 👈 CAMBIA ESTO
+  whatsappNumber: "573114305953",        // House of Kaizen (Colombia +57)
 
   // Mensaje que se autocompleta al abrir WhatsApp desde el botón directo.
   whatsappMessage: "Hola HOUSE OF KAIZEN 👋 Quiero reservar mi KEYBOARD RUG del DROP 001.",
 
-  instagram: "https://instagram.com/houseofkaizen",  // 👈 CAMBIA ESTO
+  instagram: "https://instagram.com/houseofkaizen",  // @houseofkaizen
 
   // Cupos del drop (controla el contador de escasez de la sección Exclusividad)
   slotsTotal: 20,
