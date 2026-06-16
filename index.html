@@ -6,17 +6,17 @@
   <title>HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS</title>
 
   <!-- ====== SEO / Compartir en redes (vital para un drop) ====== -->
-  <meta name="description" content="DROP 001 · KEYBOARD RUGS. La base premium sobre la que construyes tu setup, hecha a mano y diseñada 1:1 contigo. Edición limitada de 20. No es decoración, es declaración." />
+  <meta name="description" content="DROP 001 · KEYBOARD RUGS. La base premium sobre la que construyes tu setup, hecha a mano y diseñada 1:1 contigo. Edición de 20. No vuelve. No es decoración, es declaración." />
   <meta name="theme-color" content="#160C24" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS" />
-  <meta property="og:description" content="Cuidaste cada detalle de tu setup… menos la superficie que lo sostiene todo. Keyboard rugs premium 1:1. Edición de 20. No es decoración, es declaración." />
+  <meta property="og:description" content="20 personas van a tener una pieza del Drop 001. El resto solo verá las fotos. Keyboard rugs premium 1:1, hechos a mano. No es decoración, es declaración." />
   <meta property="og:image" content="assets/img/og-cover.jpg" />
   <meta property="og:site_name" content="HOUSE OF KAIZEN" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="HOUSE OF KAIZEN — DROP 001 · KEYBOARD RUGS" />
-  <meta name="twitter:description" content="La base premium de tu setup, hecha a mano 1:1. Edición de 20. No es decoración, es declaración." />
+  <meta name="twitter:description" content="La base premium de tu setup, hecha a mano 1:1. Edición de 20. No vuelve. No es decoración, es declaración." />
   <meta name="twitter:image" content="assets/img/og-cover.jpg" />
 
   <!-- Favicon monograma HK (SVG inline, sin archivos extra) -->
@@ -33,6 +33,7 @@
 <body>
   <!-- Texturas y capas globales -->
   <div class="acidwash" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
@@ -44,12 +45,12 @@
     </a>
     <nav class="nav__links" aria-label="Secciones">
       <a href="#setup">El detalle</a>
-      <a href="#drop">El Drop</a>
+      <a href="#origen">Origen</a>
       <a href="#proceso">Proceso</a>
       <a href="#incluye">Incluye</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#reservar" class="btn btn--solid nav__cta" data-reserve>Separar cupo</a>
+    <a href="#reservar" class="btn btn--solid nav__cta" data-reserve>Entrar al Drop</a>
   </header>
 
   <main id="top">
@@ -90,19 +91,18 @@
 
         <p class="hero__scarcity reveal" data-reveal data-delay="4">
           <span class="pulse" aria-hidden="true"></span>
-          Quedan <b id="slotsLeftHero">7</b> de <span data-slots-total>20</span> cupos en el Drop 001
+          Quedan <b id="slotsLeftHero">7</b> de <span data-slots-total>20</span> piezas · después cierra
         </p>
 
         <div class="hero__actions reveal" data-reveal data-delay="5">
-          <a href="#reservar" class="btn btn--solid" data-reserve>Separar mi cupo</a>
-          <a href="#proceso" class="btn btn--ghost">Ver el proceso</a>
-          <span class="hero__price">Desde <b data-price>$120.000 COP</b></span>
+          <a href="#reservar" class="btn btn--solid" data-reserve>Diseñar mi pieza →</a>
+          <a href="#proceso" class="btn btn--ghost">Ver cómo se hace</a>
         </div>
 
         <ul class="hero__trust reveal" data-reveal data-delay="5">
-          <li>Apruebas el diseño antes de producir</li>
-          <li>Reservar no tiene costo</li>
-          <li>Envíos a todo el país</li>
+          <li>Diseñado 1:1 contigo</li>
+          <li>Apruebas antes de producir</li>
+          <li>Edición numerada</li>
         </ul>
       </div>
 
@@ -121,18 +121,19 @@
       <div class="marquee__track">
         <span>NO ES DECORACIÓN — ES DECLARACIÓN&nbsp;✦&nbsp;</span>
         <span>HECHO A MANO, PUNTO POR PUNTO&nbsp;✦&nbsp;</span>
-        <span>EDICIÓN LIMITADA DE 20 — POR AGENDA&nbsp;✦&nbsp;</span>
+        <span>SOLO 20 PIEZAS — NO VUELVE&nbsp;✦&nbsp;</span>
         <span>DROP 001 · KEYBOARD RUGS&nbsp;✦&nbsp;</span>
         <span>NO ES DECORACIÓN — ES DECLARACIÓN&nbsp;✦&nbsp;</span>
         <span>HECHO A MANO, PUNTO POR PUNTO&nbsp;✦&nbsp;</span>
-        <span>EDICIÓN LIMITADA DE 20 — POR AGENDA&nbsp;✦&nbsp;</span>
+        <span>SOLO 20 PIEZAS — NO VUELVE&nbsp;✦&nbsp;</span>
         <span>DROP 001 · KEYBOARD RUGS&nbsp;✦&nbsp;</span>
       </div>
     </div>
 
     <!-- ============= SECCIÓN 2 · EL DETALLE QUE FALTA (agitación) ============= -->
     <section class="gap" id="setup">
-      <p class="section-label reveal" data-reveal>01 — EL DETALLE QUE FALTA</p>
+      <span class="bignum" aria-hidden="true">01</span>
+      <p class="section-label reveal" data-reveal><span class="tape">EL PROBLEMA</span> 01 — EL DETALLE QUE FALTA</p>
       <h2 class="gap__title reveal" data-reveal data-delay="1">
         Cuidaste cada detalle.<br />
         Menos el que lo <em>sostiene</em> todo.
@@ -178,9 +179,10 @@
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 3 · MANIFIESTO ================= -->
+    <!-- ================= SECCIÓN 3 · MANIFIESTO (identidad) ================= -->
     <section class="manifesto" id="manifiesto">
-      <p class="section-label reveal" data-reveal>02 — MANIFIESTO</p>
+      <span class="bignum" aria-hidden="true">02</span>
+      <p class="section-label reveal" data-reveal><span class="tape">IDENTIDAD</span> 02 — MANIFIESTO</p>
       <h2 class="manifesto__title reveal" data-reveal data-delay="1">
         Tu espacio no es un fondo.<br />
         Es una <em>declaración</em> de identidad.
@@ -204,47 +206,72 @@
       </div>
     </section>
 
-    <!-- ================== SECCIÓN 4 · DROP 001 ================== -->
-    <section class="drop" id="drop">
-      <div class="drop__head">
-        <p class="section-label reveal" data-reveal>03 — EL DROP</p>
-        <h2 class="drop__title reveal" data-reveal data-delay="1">
-          DROP <span>001</span>
-        </h2>
-        <p class="drop__name reveal" data-reveal data-delay="2">KEYBOARD RUGS</p>
-      </div>
-
-      <div class="drop__body">
-        <figure class="drop__media reveal" data-reveal>
-          <!-- Sustituye por foto real del producto -->
-          <div class="placeholder placeholder--tall">
-            <span>FOTO PRODUCTO · 4:5</span>
-          </div>
-          <figcaption>Pieza fotografiada en setup real · DROP 001</figcaption>
+    <!-- ================= SECCIÓN 4 · ORIGEN (founder story) ================= -->
+    <section class="origin" id="origen">
+      <span class="bignum" aria-hidden="true">03</span>
+      <div class="origin__grid">
+        <figure class="origin__media reveal" data-reveal>
+          <!-- Sustituye por foto real del fundador o del taller -->
+          <div class="placeholder placeholder--tall"><span>FOTO · FUNDADOR / TALLER</span></div>
+          <span class="stamp stamp--origin" aria-hidden="true">EST.<small>MMXXVI</small></span>
         </figure>
-
-        <div class="drop__info">
-          <p class="reveal" data-reveal data-delay="1">
-            No es un accesorio. Es la base sobre la que se construye un setup
-            con identidad. Una superficie premium, diseñada para personas que
-            cuidan obsesivamente su espacio.
+        <div class="origin__copy">
+          <p class="section-label reveal" data-reveal><span class="tape">HUMANOS, NO FÁBRICA</span> 03 — ORIGEN</p>
+          <h2 class="origin__title reveal" data-reveal data-delay="1">Por qué existe<br />House of Kaizen.</h2>
+          <p class="reveal" data-reveal data-delay="2">
+            No nació en una fábrica. Nació de la obsesión por los detalles que
+            casi nadie nota… y de la rabia de armar un setup perfecto para
+            terminar apoyándolo en una superficie genérica de catálogo.
           </p>
-          <ul class="specs">
-            <li class="reveal" data-reveal data-delay="2"><span>Categoría</span><b>Keyboard Rug premium</b></li>
-            <li class="reveal" data-reveal data-delay="2"><span>Diseño</span><b>100% personalizado</b></li>
-            <li class="reveal" data-reveal data-delay="3"><span>Técnica</span><b>Tufting a mano</b></li>
-            <li class="reveal" data-reveal data-delay="3"><span>Fibra</span><b>Premium de alta densidad</b></li>
-            <li class="reveal" data-reveal data-delay="4"><span>Edición</span><b>Limitada · 20 piezas</b></li>
-            <li class="reveal specs--price" data-reveal data-delay="4"><span>Precio base</span><b data-price>$120.000 COP</b></li>
-          </ul>
-          <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="5" data-reserve>Separar esta pieza</a>
+          <p class="reveal" data-reveal data-delay="3">
+            Kaizen — 改善 — es mejora constante. Es la única regla del taller:
+            cada pieza, un grado mejor que la anterior. Hechas a mano, una por
+            una, por personas que tratan tu espacio como tratarían el suyo.
+          </p>
+          <p class="origin__sign reveal" data-reveal data-delay="4">
+            No queremos vender miles. Queremos hacer pocas, e irrepetibles.
+            <b>Si tu espacio te representa, estás en el lugar correcto.</b>
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 5 · PROCESO ================= -->
+    <!-- =============== SECCIÓN 5 · EXCLUSIVIDAD (FOMO) =============== -->
+    <section class="scarcity" id="exclusividad">
+      <span class="bignum" aria-hidden="true">04</span>
+      <div class="scarcity__inner">
+        <p class="section-label reveal" data-reveal><span class="tape">NO VUELVE</span> 04 — EXCLUSIVIDAD</p>
+        <h2 class="scarcity__title reveal" data-reveal data-delay="1">
+          Solo <em>20</em>.<br />Y no vuelven.
+        </h2>
+        <p class="scarcity__lead reveal" data-reveal data-delay="2">
+          20 personas van a tener una pieza del Drop 001. El resto solo va a ver
+          las fotos. Cuando se reserve el cupo 20, esta edición <b>cierra</b> —
+          no reabrimos, no reimprimimos, no "volvió por demanda". Lo irrepetible
+          se vive una vez.
+        </p>
+
+        <div class="counter reveal" data-reveal data-delay="3">
+          <div class="counter__item">
+            <b data-slots-total>20</b><span>Piezas en el Drop 001</span>
+          </div>
+          <div class="counter__bar">
+            <i id="slotsBar"></i>
+            <small><span id="slotsTaken">13</span> reservadas · <b><span id="slotsLeft">7</span> disponibles</b></small>
+          </div>
+          <div class="counter__item">
+            <b>1:1</b><span>Diseño por persona</span>
+          </div>
+        </div>
+
+        <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="4" data-reserve>Reservar mi edición →</a>
+      </div>
+    </section>
+
+    <!-- ================= SECCIÓN 6 · PROCESO (craft) ================= -->
     <section class="process" id="proceso">
-      <p class="section-label reveal" data-reveal>04 — CRAFTSMANSHIP</p>
+      <span class="bignum" aria-hidden="true">05</span>
+      <p class="section-label reveal" data-reveal><span class="tape">CRAFTSMANSHIP</span> 05 — CÓMO SE HACE</p>
       <h2 class="process__title reveal" data-reveal data-delay="1">
         Hecho a mano.<br />Punto por punto.
       </h2>
@@ -281,12 +308,52 @@
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 6 · QUÉ INCLUYE (oferta) ================= -->
+    <!-- ================= SECCIÓN 7 · PRUEBA (social proof) ================= -->
+    <section class="proof" id="prueba">
+      <span class="bignum" aria-hidden="true">06</span>
+      <div class="proof__head">
+        <p class="section-label reveal" data-reveal><span class="tape">REAL</span> 06 — HECHO, NO PROMETIDO</p>
+        <h2 class="proof__title reveal" data-reveal data-delay="1">Esto no es un render.</h2>
+        <p class="proof__lead reveal" data-reveal data-delay="2">
+          Cada pieza existe, se toca y sale del taller revisada a mano. Sin stock
+          fantasma, sin "ya casi": piezas reales, hechas por encargo.
+        </p>
+      </div>
+
+      <!-- Galería de piezas reales. Sustituye cada placeholder por tus fotos. -->
+      <div class="proof__gallery">
+        <div class="placeholder placeholder--proof reveal" data-reveal><span>PIEZA 01 · EN SETUP</span></div>
+        <div class="placeholder placeholder--proof reveal" data-reveal data-delay="1"><span>CLOSE-UP · FIBRA</span></div>
+        <div class="placeholder placeholder--proof reveal" data-reveal data-delay="2"><span>PIEZA 02 · DETALLE</span></div>
+        <div class="placeholder placeholder--proof reveal" data-reveal data-delay="3"><span>EN EL TALLER</span></div>
+      </div>
+
+      <ul class="proof__badges">
+        <li class="reveal" data-reveal><b>Apruebas el diseño</b><span>antes de que produzcamos nada</span></li>
+        <li class="reveal" data-reveal data-delay="1"><b>Hablas directo</b><span>con quien hace tu pieza</span></li>
+        <li class="reveal" data-reveal data-delay="2"><b>Hecho por encargo</b><span>a mano, solo para ti</span></li>
+        <li class="reveal" data-reveal data-delay="3"><b>Pieza numerada</b><span>1 de 20 · única</span></li>
+      </ul>
+
+      <!-- Cuando tengas testimonios reales, descomenta y reemplaza:
+      <blockquote class="quote">“ Texto real del cliente. ” <cite>— Nombre, ciudad</cite></blockquote>
+      -->
+    </section>
+
+    <!-- ================= SECCIÓN 8 · INCLUYE (value equation) ================= -->
     <section class="offer" id="incluye">
-      <p class="section-label reveal" data-reveal>05 — QUÉ INCLUYE TU PIEZA</p>
+      <span class="bignum" aria-hidden="true">07</span>
+      <p class="section-label reveal" data-reveal><span class="tape">LA OFERTA</span> 07 — QUÉ RECIBES DE VERDAD</p>
       <h2 class="offer__title reveal" data-reveal data-delay="1">
         No pagas por una alfombra.<br />Pagas por <em>todo</em> esto.
       </h2>
+
+      <!-- Value Equation en lenguaje claro -->
+      <div class="valeq">
+        <div class="valeq__item reveal" data-reveal><span>El resultado</span><b>Un espacio que se siente 100% tuyo.</b></div>
+        <div class="valeq__item reveal" data-reveal data-delay="1"><span>La certeza</span><b>Apruebas el diseño antes de producir. Sabes qué recibes.</b></div>
+        <div class="valeq__item reveal" data-reveal data-delay="2"><span>Tu esfuerzo</span><b>Casi cero: lo diseñamos contigo y lo hacemos a mano.</b></div>
+      </div>
 
       <div class="offer__grid">
         <ul class="offer__list">
@@ -298,79 +365,76 @@
           <li class="reveal" data-reveal data-delay="4"><span class="offer__ic">✓</span><div><b>Acceso prioritario al Drop 002</b><p>Entras primero a lo que viene, antes de que se abra al público.</p></div></li>
         </ul>
 
-        <aside class="offer__card reveal" data-reveal data-delay="2">
-          <p class="offer__card-k">Tu pieza, hecha a mano y única</p>
-          <p class="offer__card-price">Desde <b data-price>$120.000 COP</b></p>
-          <p class="offer__card-anchor">
-            Una superficie genérica cuesta $20–40k… y la tiene medio mundo.
-            Una pieza HOK es tuya, irrepetible y hecha a mano.
-          </p>
-          <a href="#reservar" class="btn btn--solid offer__card-cta" data-reserve>Separar mi cupo</a>
-          <p class="offer__card-note">Reservar no tiene costo · Apruebas el diseño antes de producir</p>
+        <aside class="offer__spec reveal" data-reveal data-delay="2">
+          <p class="offer__spec-k">La ficha</p>
+          <ul class="specs">
+            <li><span>Categoría</span><b>Keyboard Rug premium</b></li>
+            <li><span>Diseño</span><b>100% personalizado</b></li>
+            <li><span>Técnica</span><b>Tufting a mano</b></li>
+            <li><span>Fibra</span><b>Alta densidad</b></li>
+            <li><span>Edición</span><b>Limitada · 20 piezas</b></li>
+          </ul>
+          <span class="stamp" aria-hidden="true">1/20<small>EDICIÓN</small></span>
         </aside>
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 7 · GARANTÍA (risk reversal) ================= -->
-    <section class="guarantee" id="garantia">
-      <div class="guarantee__inner reveal" data-reveal>
-        <span class="guarantee__seal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="30" height="30"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V5l7-3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
-        </span>
-        <div>
-          <h2 class="guarantee__title">Apruebas el diseño antes de que toquemos la fibra.</h2>
-          <p class="guarantee__copy">
-            Reservar tu cupo <b>no tiene costo</b>. Defines tu pieza, revisas el
-            diseño y solo avanzamos cuando estás 100% convencido. Cero riesgo,
-            cero sorpresas — así debe sentirse comprar algo hecho para ti.
+    <!-- ================= SECCIÓN 9 · PRECIO (reveal) + garantía ================= -->
+    <section class="price" id="precio">
+      <span class="bignum" aria-hidden="true">08</span>
+      <p class="section-label reveal" data-reveal><span class="tape">SIN SORPRESAS</span> 08 — TU INVERSIÓN</p>
+      <h2 class="price__title reveal" data-reveal data-delay="1">
+        ¿Cuánto cuesta entrar<br />al Drop 001?
+      </h2>
+
+      <div class="price__grid">
+        <div class="price__card reveal" data-reveal data-delay="1">
+          <p class="price__k">Tu pieza, hecha a mano y única</p>
+          <p class="price__big">Desde <b data-price>$120.000 COP</b></p>
+          <p class="price__anchor">
+            Una superficie genérica cuesta $20–40k… y la tiene medio mundo.
+            La tuya es irrepetible, numerada y hecha a mano para ti.
           </p>
+          <a href="#reservar" class="btn btn--solid price__cta" data-reserve>Diseñar mi pieza →</a>
+          <p class="price__note">Reservar no tiene costo · Apruebas el diseño antes de producir</p>
+        </div>
+
+        <div class="price__guarantee reveal" data-reveal data-delay="2">
+          <span class="price__seal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V5l7-3z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Apruebas el diseño antes de que toquemos la fibra.</h3>
+          <p>Defines tu pieza, revisas el diseño y solo avanzamos cuando estás 100% convencido. Cero riesgo, cero sorpresas — así debe sentirse comprar algo hecho para ti.</p>
         </div>
       </div>
     </section>
 
-    <!-- =============== SECCIÓN 8 · EXCLUSIVIDAD =============== -->
-    <section class="scarcity" id="exclusividad">
-      <div class="scarcity__inner">
-        <p class="section-label reveal" data-reveal>06 — EXCLUSIVIDAD</p>
-        <h2 class="scarcity__title reveal" data-reveal data-delay="1">
-          Los primeros <em>20</em>.<br />
-          Después, este drop no se repite.
-        </h2>
-        <p class="scarcity__lead reveal" data-reveal data-delay="2">
-          Cada rug se fabrica a mano y por encargo. Abrimos solo 20 cupos para
-          proteger el detalle de cada pieza. Cuando se llenan, el Drop 001
-          cierra — y ser de los primeros no se puede comprar después.
-        </p>
-
-        <div class="counter reveal" data-reveal data-delay="3">
-          <div class="counter__item">
-            <b data-slots-total>20</b><span>Cupos en el Drop 001</span>
-          </div>
-          <div class="counter__bar">
-            <i id="slotsBar"></i>
-            <small><span id="slotsTaken">13</span> reservados · <b><span id="slotsLeft">7</span> disponibles</b></small>
-          </div>
-          <div class="counter__item">
-            <b>1:1</b><span>Diseño por cliente</span>
-          </div>
-        </div>
-
-        <a href="#reservar" class="btn btn--solid reveal" data-reveal data-delay="4" data-reserve>Asegurar mi cupo</a>
+    <!-- Marquee de urgencia -->
+    <div class="marquee marquee--alt" aria-hidden="true">
+      <div class="marquee__track">
+        <span>ÚLTIMAS PIEZAS&nbsp;✦&nbsp;</span>
+        <span>DROP 001 — NO VUELVE&nbsp;✦&nbsp;</span>
+        <span>DISEÑA LA TUYA&nbsp;✦&nbsp;</span>
+        <span>1 DE 20&nbsp;✦&nbsp;</span>
+        <span>ÚLTIMAS PIEZAS&nbsp;✦&nbsp;</span>
+        <span>DROP 001 — NO VUELVE&nbsp;✦&nbsp;</span>
+        <span>DISEÑA LA TUYA&nbsp;✦&nbsp;</span>
+        <span>1 DE 20&nbsp;✦&nbsp;</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ================= SECCIÓN 9 · FAQ (acordeón) ================= -->
+    <!-- ================= SECCIÓN 10 · FAQ (acordeón) ================= -->
     <section class="faq" id="faq">
       <div class="faq__head">
         <div>
-          <p class="section-label reveal" data-reveal>07 — PREGUNTAS</p>
+          <p class="section-label reveal" data-reveal><span class="tape">DUDAS</span> 09 — PREGUNTAS</p>
           <h2 class="faq__title reveal" data-reveal data-delay="1">FAQ</h2>
         </div>
-        <p class="faq__intro reveal" data-reveal data-delay="2">Todo lo que necesitas antes de separar tu cupo. ¿Otra duda? Escríbenos directo por WhatsApp.</p>
+        <p class="faq__intro reveal" data-reveal data-delay="2">Todo lo que necesitas antes de diseñar tu pieza. ¿Otra duda? Escríbenos directo por WhatsApp.</p>
       </div>
       <div class="faq__list">
         <details class="faq__item" open>
-          <summary>¿Cómo separo mi pieza?<span class="ic" aria-hidden="true"></span></summary>
+          <summary>¿Cómo diseño mi pieza?<span class="ic" aria-hidden="true"></span></summary>
           <div class="faq__answer">Escríbenos por WhatsApp y <b>agendamos tu cupo</b> dentro del Drop 001. Definimos diseño, tamaño y fecha. No hay pago inmediato: primero confirmamos disponibilidad y el valor exacto de tu pieza.</div>
         </details>
         <details class="faq__item">
@@ -400,23 +464,22 @@
       </div>
     </section>
 
-    <!-- ================= SECCIÓN 10 · SEPARAR AGENDA (CTA) ================= -->
+    <!-- ================= SECCIÓN 11 · CTA FINAL ================= -->
     <section class="cta" id="reservar">
       <div class="cta__intro">
-        <p class="section-label reveal" data-reveal>08 — SEPARAR AGENDA</p>
+        <p class="section-label reveal" data-reveal><span class="tape">TU TURNO</span> 10 — DISEÑA TU PIEZA</p>
         <h2 class="cta__title reveal" data-reveal data-delay="1">
-          Quedan <span id="slotsLeftCta">7</span> cupos.<br />Que uno sea tuyo.
+          Quedan <span id="slotsLeftCta">7</span> piezas.<br />Que una sea tuya.
         </h2>
         <p class="cta__lead reveal" data-reveal data-delay="2">
-          Esto no se compra en un carrito. Se separa en una conversación.
+          Esto no se compra en un carrito. Se diseña en una conversación.
           Cuéntanos tu setup y la idea que quieres convertir en pieza —
           respondemos personalmente cada solicitud.
         </p>
-        <span class="cta__price reveal" data-reveal data-delay="2">Precio base · Desde <b data-price>$120.000 COP</b></span>
         <div class="cta__actions reveal" data-reveal data-delay="3">
           <a id="waBtn" class="btn btn--wa" href="#" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M.06 24l1.68-6.14A11.86 11.86 0 0 1 .16 11.9C.16 5.33 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.79 11.79 0 0 1 3.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zM6.6 20.13l.36.22a9.86 9.86 0 0 0 5.02 1.38h.01c5.45 0 9.89-4.43 9.89-9.88a9.82 9.82 0 0 0-2.89-6.99 9.82 9.82 0 0 0-6.99-2.9c-5.46 0-9.9 4.43-9.9 9.89 0 1.87.53 3.7 1.52 5.28l.24.38-1 3.64 3.74-.74zm11.39-5.55c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41z"/></svg>
-          Separar agenda por WhatsApp
+          Diseñar mi pieza por WhatsApp
           </a>
           <p class="cta__cancel">¿Ya tienes pedido? <a id="waCancel" href="#" target="_blank" rel="noopener">Gestionar por WhatsApp</a></p>
         </div>
@@ -427,7 +490,7 @@
         <input type="hidden" name="form-name" value="reserva" />
         <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
 
-        <p class="form__title">Separa tu cupo en 30 segundos</p>
+        <p class="form__title">Diseña tu pieza en 30 segundos</p>
         <div class="form__row">
           <label>Nombre
             <input type="text" name="nombre" placeholder="Tu nombre" required />
@@ -451,7 +514,7 @@
         <label>Tu idea / identidad
           <textarea name="idea" rows="4" placeholder="Colores, referencias, el setup que tienes y la pieza que imaginas..."></textarea>
         </label>
-        <button type="submit" class="btn btn--solid form__submit">Enviar y separar agenda</button>
+        <button type="submit" class="btn btn--solid form__submit">Quiero mi pieza →</button>
         <p class="form__note">Sin pago aún. Confirmamos disponibilidad, diseño y precio contigo antes de avanzar.</p>
       </form>
     </section>
@@ -487,7 +550,7 @@
       </div>
       <div>
         <p class="footer__label">Drop actual</p>
-        <p>001 · Keyboard Rugs<br />Edición limitada de 20</p>
+        <p>001 · Keyboard Rugs<br />Edición de 20 · no vuelve</p>
       </div>
       <div>
         <p class="footer__label">Contacto</p>
@@ -502,8 +565,8 @@
   </footer>
 
   <!-- ============== STICKY CTA (móvil) ============== -->
-  <a class="stickybar" id="stickyCta" href="#reservar" data-reserve aria-label="Separar mi cupo">
-    <span class="stickybar__txt">Separar mi cupo</span>
+  <a class="stickybar" id="stickyCta" href="#reservar" data-reserve aria-label="Diseñar mi pieza">
+    <span class="stickybar__txt">Diseñar mi pieza →</span>
     <span class="stickybar__slots">Quedan <b id="slotsLeftSticky">7</b></span>
   </a>
 
